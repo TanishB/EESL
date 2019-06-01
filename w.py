@@ -33,7 +33,13 @@ def customPrice(electricStation):
     waitingTime = round((numberOfCars * (1/3))*(1/chargingPoints) , 2)
     return(dynamicPrice , waitingTime)
 
-for j in evList:
-    price , time = customPrice(j)
-    print(price , time)
+def priceTime:
+    priceTime = []
+    for j in evList:
+        price , time = customPrice(j)
+        #print(price , time)
+        priceTime.append([price , time])
+     return(priceTime)
+        
+returnedTimePrice = priceTime()
     
